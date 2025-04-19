@@ -2,12 +2,9 @@ import os
 import logging
 import pywhatkit
 from fastapi import FastAPI, HTTPException, Query
-from dotenv import load_dotenv
 import pyautogui
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
-load_dotenv()
 
 # Initialize FastAPI app
 app = FastAPI(
